@@ -1,11 +1,9 @@
-import { Kanban } from './components/Kanban'
 import { Navbar } from './components/Navbar'
 
 export default function Home() {
   return (
-    <div className ='flex'>
-        <Navbar/>
-        <Kanban/>
+    <div className ='flex items-center justify-center w-screen h-screen'>
+        <h1>Faça seu login de acesso</h1>
     </div>
   )
 }
