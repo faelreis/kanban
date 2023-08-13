@@ -9,12 +9,8 @@ import Link from 'next/link'
 
 export function Navbar(){
     return(
-        <div className='bg-purple h-screen w-1/5 p-8 ease transition-all duration-300 hover:drop-shadow-2xl'>
-            <Image
-                src={logoRafael}
-                alt='Logo Rafael Reis'
-            />
-            <nav className='mt-32'>
+        <div className='border-r-[1px] border-gray border-opacity-20 border-solid bg-white h-screen w-1/5 flex items-start px-8 ease transition-all duration-300 hover:drop-shadow-2xl'>
+            <nav className='mt-20'>
                 <ul className='flex flex-col gap-12'>
 
                     <li>
@@ -23,7 +19,7 @@ export function Navbar(){
                                 src={boardIcon}
                                 alt='Board icon'
                             />
-                            <span className='text-white'>Boards</span>
+                            <span className='text-gray'>Boards</span>
                         </Link>
                     </li>
                     <li>
@@ -32,7 +28,7 @@ export function Navbar(){
                                 src={dashboardIcon}
                                 alt='Dashboard icon'
                             />
-                            <span className='text-white'>Dashboard</span>
+                            <span className='text-gray'>Dashboard</span>
                         </Link>
                     </li>
                     <li>
@@ -41,7 +37,7 @@ export function Navbar(){
                                 src={teamIcon}
                                 alt='Team icon'
                             />
-                            <span className='text-white'>Equipe</span>
+                            <span className='text-gray'>Equipe</span>
                         </Link>
                     </li>
                     <li>
@@ -50,7 +46,7 @@ export function Navbar(){
                                 src={configIcon}
                                 alt='Config icon'
                             />
-                            <span className='text-white'>Ajustes</span>
+                            <span className='text-gray'>Ajustes</span>
                         </Link>
                     </li>
                 </ul>
