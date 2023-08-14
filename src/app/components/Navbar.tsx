@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export function Navbar(){
     return(
-        <div className='border-r-[1px] border-gray border-opacity-20 border-solid bg-white h-screen w-1/5 flex items-start px-8 ease transition-all duration-300 hover:drop-shadow-2xl'>
+        <div className='border-r-[1px] border-gray border-opacity-20 border-solid bg-white h-screen w-1/6 flex items-start px-8 ease transition-all duration-300 hover:drop-shadow-2xl'>
             <nav className='mt-20'>
                 <ul className='flex flex-col gap-12'>
 

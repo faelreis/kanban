@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import searchIcon  from '../../assets/icons/search.svg'
+import searchIcon  from '../../../assets/icons/search.svg'
 
 export function SearchTask(){
     return(

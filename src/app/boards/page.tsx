@@ -1,10 +1,9 @@
 import { Navbar } from "@/app/components/Navbar";
 import { Header } from "../components/Header";
-import { FilterTask } from '@/app/components/FilterTask';
-import { SearchTask } from "../components/SearchTask";
-import { ListCard } from "../components/ListCard";
-import { TitleList } from "../components/TitleList";
-import { NewCard } from "../components/NewCard";
+import { FilterTask } from '@/app/components/Boards/FilterTask';
+import { SearchTask } from "../components/Boards/SearchTask";
+import { WrapperBoard } from "../components/Boards/WrapperBoard";
+import { ModalCard } from "../components/Boards/Card/components/ModalCard";
 
 export default function Boards(){
     return(
@@ -13,14 +12,15 @@ export default function Boards(){
             <div className='flex'>
                 <Navbar/>
                     <div className='p-12 w-full'>
-                        <div className='flex gap-7 w-full justify-between'>
+                        <div className='mb-10 flex gap-7 w-full justify-between'>
                             <FilterTask/>
                             <SearchTask/>
                         </div>
-                        <div>
-                            <TitleList/>
-                            <ListCard/>
-                            <NewCard/>
+                        <div className='w-full flex gap-10'>
+                            <ModalCard/>
+                            <WrapperBoard/>
+                            <WrapperBoard/>
+                            <WrapperBoard/>
                         </div>
                     </div>
             </div>
