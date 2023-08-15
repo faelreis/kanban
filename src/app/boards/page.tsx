@@ -16,8 +16,8 @@ export default function Boards(){
                             <FilterTask/>
                             <SearchTask/>
                         </div>
-                        <div className='w-full flex gap-10'>
-                            <ModalCard/>
+                        <div className='w-full h-full flex gap-10'>
+                            <ModalCard/> 
                             <WrapperBoard/>
                             <WrapperBoard/>
                             <WrapperBoard/>
