@@ -17,7 +17,6 @@ export default function Boards(){
                             <SearchTask/>
                         </div>
                         <div className='w-full h-full flex gap-10'>
-                            <ModalCard/> 
                             <WrapperBoard/>
                             <WrapperBoard/>
                             <WrapperBoard/>
