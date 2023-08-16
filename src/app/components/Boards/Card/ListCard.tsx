@@ -6,11 +6,16 @@ import { useBoardStore } from "../../../../../store/BoardStore";
 
 export function ListCard(){
 
-    const getBoard = useBoardStore((state) => state.getBoard)
+    const [board, getBoard] = useBoardStore((state) => [
+        state.board,
+        state.getBoard
+    ])
 
     useEffect(()=>{
         getBoard();
     }, [getBoard]);
+
+    console.log(board)
 
     return(
         <h1>Hello</h1>
