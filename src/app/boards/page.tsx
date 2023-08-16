@@ -2,7 +2,7 @@ import { Navbar } from "@/app/components/Navbar";
 import { Header } from "../components/Header";
 import { FilterTask } from '@/app/components/Boards/FilterTask';
 import { SearchTask } from "../components/Boards/SearchTask";
-import { WrapperBoard } from "../components/Boards/WrapperBoard";
+import { WrapperBoard } from "../components/Boards/Column";
 import { ModalCard } from "../components/Boards/Card/components/ModalCard";
 
 export default function Boards(){
