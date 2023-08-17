@@ -1,16 +1,41 @@
 'use client'
 import { useState } from "react";
-import { ListCard } from "./Card/ListCard";
-import { NewCard } from "./NewCard";
-import { TitleList } from "./TitleList";
+import { Draggable, Droppable } from "react-beautiful-dnd";
 
-export function WrapperBoard(){
+type Props = {
+    id: TypedColumn,
+    todos: Todo[],
+    index: number,
+}
+
+export function Column({id, todos, index}: Props){
     const [titleName, setTitleName] = useState('TO DO')
     return(
         <div className='flex flex-col w-full'>
-            <TitleList titleName={titleName}/>
-            <ListCard/>
-            <NewCard/>
+            <Draggable draggableId={id} index={index}>
+                {(provided) => (
+                    <div
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        ref={provided.innerRef}
+                    >
+                        {/* {render droppable todos in the column} */}
+                        <Droppable droppableId={index.toString()} type='card'>
+                            {(provided, snapshot) => (
+                                <div
+                                    {...provided.droppableProps}
+                                    ref={provided.innerRef}
+                                    className={`pb-2 p2 rounded-2xl shadow-sm ${
+                                        snapshot.isDraggingOver ? 'bg-purple' : 'bg-white/50'
+                                    }`}
+                                >
+                                    <h2>{id}</h2>
+                                </div>
+                            )}
+                        </Droppable>
+                    </div>
+                )}
+            </Draggable>
         </div>
 
     )

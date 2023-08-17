@@ -2,8 +2,7 @@ import { Navbar } from "@/app/components/Navbar";
 import { Header } from "../components/Header";
 import { FilterTask } from '@/app/components/Boards/FilterTask';
 import { SearchTask } from "../components/Boards/SearchTask";
-import { WrapperBoard } from "../components/Boards/Column";
-import { ModalCard } from "../components/Boards/Card/components/ModalCard";
+import { ListCard } from "../components/Boards/Card/ListCard";
 
 export default function Boards(){
     return(
@@ -17,9 +16,7 @@ export default function Boards(){
                             <SearchTask/>
                         </div>
                         <div className='w-full h-full flex gap-10'>
-                            <WrapperBoard/>
-                            <WrapperBoard/>
-                            <WrapperBoard/>
+                            <ListCard/>
                         </div>
                     </div>
             </div>
