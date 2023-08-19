@@ -1,8 +1,8 @@
 "use client";
-import { Card } from "./components/Card";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { useEffect } from "react";
 import { useBoardStore } from "../../../../../store/BoardStore";
+import { Column } from "../Column";
 
 export function ListCard() {
   const [board, getBoard] = useBoardStore((state) => [
